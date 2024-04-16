@@ -27,9 +27,9 @@ RUN cd /tmp \
 # `--scheme=small` corresponds to the BasicTeX variant of MacTeX.
 RUN cd /tmp \
     && curl -L -o install-tl-unx.tar.gz https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz \
-    && mkdir -p install-tl-unx
+    && mkdir -p install-tl-unx \
     && tar -xvzf install-tl-unx.tar.gz -C install-tl-unx \
-    && cd install-tl-* \
+    && cd install-tl-unx/install-tl-*/ \
     && perl ./install-tl --no-interaction --scheme=small
 
 # Finally, prepend `/usr/local/texlive/YYYY/bin/PLATFORM` to your PATH.
