@@ -1,8 +1,12 @@
-# NVIDIA CUDA FFmpeg
+# Install FFmpeg using NVIDIA GPU
+
+## Build image
 
 ```sh
 docker build -t nvidia-cuda-ffmpeg .
 ```
+
+## Verify the image
 
 ```sh
 docker run --rm --gpus 'all,"capabilities=compute,utility,video"' \

@@ -1,0 +1,3 @@
+mmcv @ git+https://github.com/open-mmlab/mmcv@v2.1.0
+mmdet @ git+https://github.com/open-mmlab/mmdetection@v3.3.0
+mmocr @ git+https://github.com/open-mmlab/mmocr@2caab0a
